@@ -21,6 +21,7 @@ app.get('/generate-qr', async (req, res) => {
             city: 'BRASILIA',
             cep: '28360000',
             value: preco, // Valor em reais
+            transactionId: 'Vandal Xiter - SHOP',
         });
 
         const qrCode = await qrCodePix.base64();
