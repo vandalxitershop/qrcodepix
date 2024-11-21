@@ -20,7 +20,7 @@ app.get('/generate-qr', async (req, res) => {
             name: 'Joaozinho',
             city: 'BRASILIA',
             cep: '28360000',
-            value: preco, // Valor em reais
+            value: preco // Valor em reais
         });
 
         const qrCode = await qrCodePix.base64();
